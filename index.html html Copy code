@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>USA Number Status Checker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>📱 USA Number Status Checker</h2>
+    <input type="text" id="phoneNumber" placeholder="Enter USA Number (e.g. 9182819833)" />
+    <button onclick="checkStatus()">Check Status</button>
+    <button onclick="copyResult()">Copy Result</button>
+    <div id="result" class="result-box"></div>
+    <div class="copy-popup" id="copy-popup">
+      ✅ Result copied to clipboard!
+      <a href="https://create404create.github.io/DNC111/" class="backup-link" target="_blank">🔗 Visit Backup Site</a>
+    </div>
+    <footer>🔧 Created by <span class="author" onclick="window.open('https://wa.me/923285809899','_blank')">Ehtisham</span></footer>
+  </div>
+
+  <!-- ChatGPT Widget -->
+  <div class="chatbot-container" id="chat-widget">
+    <div class="chat-header" onclick="toggleChat()">🤖 GPT Assistant</div>
+    <div class="chat-body" id="chat-body">
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="chat-input-wrapper">
+        <input type="text" id="chat-input" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
